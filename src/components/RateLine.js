@@ -146,12 +146,12 @@ const RateLine = () => {
           </span>
           <span className="symbol-name">SPY</span>
           <span className="symbol-changes">
-            <span class="symbol-changes-js">0.30</span>%
+            <span className="symbol-changes-js">0.30</span>%
           </span>
-          (<span class="symbol-price symbol-price-js">390.62</span>)
+          (<span className="symbol-price symbol-price-js">390.62</span>)
         </li>
-        <li class="symbol grow" data-symbol="USD-JPY">
-          <span class="dynamics grow">
+        <li className="symbol grow" data-symbol="USD-JPY">
+          <span className="dynamics grow">
             <svg
               width="14"
               height="10"
@@ -161,7 +161,7 @@ const RateLine = () => {
               <path d="M7 0L0 10H14L7 0Z" fill="#2469F0"></path>
             </svg>{" "}
           </span>
-          <span class="dynamics drop" style={{ display: "none" }}>
+          <span className="dynamics drop" style={{ display: "none" }}>
             <svg
               width="14"
               height="10"
@@ -173,14 +173,14 @@ const RateLine = () => {
                 fill="#1D1D1F"></path>
             </svg>{" "}
           </span>
-          <span class="symbol-name">USD/JPY</span>
-          <span class="symbol-changes">
-            <span class="symbol-changes-js">0.00</span>%
+          <span className="symbol-name">USD/JPY</span>
+          <span className="symbol-changes">
+            <span className="symbol-changes-js">0.00</span>%
           </span>
-          (<span class="symbol-price symbol-price-js">127.85</span>)
+          (<span className="symbol-price symbol-price-js">127.85</span>)
         </li>
-        <li class="symbol drop" data-symbol="XPT-USD">
-          <span class="dynamics grow" style={{ display: "none" }}>
+        <li className="symbol drop" data-symbol="XPT-USD">
+          <span className="dynamics grow" style={{ display: "none" }}>
             <svg
               width="14"
               height="10"
@@ -190,7 +190,7 @@ const RateLine = () => {
               <path d="M7 0L0 10H14L7 0Z" fill="#2469F0"></path>
             </svg>{" "}
           </span>
-          <span class="dynamics drop">
+          <span className="dynamics drop">
             <svg
               width="14"
               height="10"
@@ -202,11 +202,11 @@ const RateLine = () => {
                 fill="#1D1D1F"></path>
             </svg>{" "}
           </span>
-          <span class="symbol-name">XPT/USD</span>
-          <span class="symbol-changes">
-            <span class="symbol-changes-js">-0.24</span>%
+          <span className="symbol-name">XPT/USD</span>
+          <span className="symbol-changes">
+            <span className="symbol-changes-js">-0.24</span>%
           </span>
-          (<span class="symbol-price symbol-price-js">955.60</span>)
+          (<span className="symbol-price symbol-price-js">955.60</span>)
         </li>
       </ul>
     </div>

@@ -35,3 +35,11 @@ body {
 .rates-line ul li.grow .symbol-name {
   color: #1d1d1f;
 }
+
+/** @format */
+
+@media (max-width: 768px) {
+  .rates-line {
+    display: none;
+  }
+}
