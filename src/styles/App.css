@@ -8,9 +8,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 0.875rem;
-  font-family: Roboto Mono, FreeMono, sans-serif;
+  font-family: "Roboto Mono", monospace;
   height: 40px;
   background-color: #fff !important;
   overflow: hidden;
@@ -28,4 +28,10 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   white-space: nowrap;
+}
+.rates-line ul li.grow {
+  color: #2469f0;
+}
+.rates-line ul li.grow .symbol-name {
+  color: #1d1d1f;
 }
