@@ -1,10 +1,11 @@
 /** @format */
 
 import React from "react";
+import "../styles/App.css";
 const RateLine = () => {
   return (
     <div className="rates-line">
-      <ul className="mr-auto ml-auto">
+      <ul>
         <li className="symbol drop" data-symbol="ETH-USD_Binance">
           <span className="dynamics grow" style={{ display: "none" }}>
             <svg

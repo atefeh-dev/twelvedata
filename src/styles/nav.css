@@ -1,15 +1,6 @@
 /** @format */
 
-.logo,
-.logo:hover {
-  text-decoration: none;
-  -webkit-text-decoration-color: #1d1d1f;
-  text-decoration-color: #1d1d1f;
-  font-size: 1.875rem;
-  font-weight: 300;
-  font-family: GT Walsheim Pro, sans-serif;
-}
-.logo .twelve,
-.logo:hover .twelve {
-  font-weight: 700;
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
 }
