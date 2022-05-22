@@ -1,11 +1,12 @@
 /** @format */
 
-import Card from "./Home";
+import RateLine from "./RateLine";
+import "../styles/App.css";
 
 const App = () => {
   return (
     <div>
-      <Card />
+      <RateLine />
     </div>
   );
 };
