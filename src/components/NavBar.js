@@ -7,8 +7,8 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          Navbar
+        <a class="navbar-brand logo" href="https://twelvedata.com">
+          <span class="twelve">twelve</span>data
         </a>
         <button
           className="navbar-toggler"
@@ -29,12 +29,12 @@ const NavBar = () => {
                 Products
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item dropdown">
               <a className="nav-link" href="#">
                 Developers
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item ">
               <a className="nav-link" href="#">
                 Company
               </a>

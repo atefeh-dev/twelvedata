@@ -4,3 +4,28 @@
 .mx-auto {
   margin-left: auto !important;
 }
+.logo,
+.logo:hover {
+  text-decoration: none;
+  -webkit-text-decoration-color: #1d1d1f;
+  text-decoration-color: #1d1d1f;
+  font-size: 1.875rem;
+  font-weight: 300;
+  font-family: GT Walsheim Pro, sans-serif;
+}
+.logo .twelve,
+.logo:hover .twelve {
+  font-weight: 700;
+}
+.navbar .navbar-nav .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.navbar .navbar-nav.items .nav-item {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
