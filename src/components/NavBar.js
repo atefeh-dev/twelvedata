@@ -123,15 +123,18 @@ const NavBar = () => {
                                   </defs>
                                 </svg>
                               </div>
-                              <span class="submenu-item">Stock</span>
-                              <span class="submenu-item-headline">
-                                US &amp; global coverage
+                              <span>
+                                <span class="submenu-item">Stock</span>
+                                <span class="submenu-item-headline">
+                                  US &amp; global coverage
+                                </span>
                               </span>
                             </a>
                           </div>
                           <div class="col col-md-6 col-sm-6 col-12">
                             <a
                               class="dropdown-item forex"
+                              style={{ display: "flex" }}
                               href="https://twelvedata.com/forex">
                               <div class="submenu-item-image">
                                 <svg
@@ -198,9 +201,11 @@ const NavBar = () => {
                                     fill="white"></path>
                                 </svg>
                               </div>
-                              <span class="submenu-item">Forex</span>
-                              <span class="submenu-item-headline">
-                                Physical currency
+                              <span>
+                                <span class="submenu-item">Forex</span>
+                                <span class="submenu-item-headline">
+                                  Physical currency
+                                </span>
                               </span>
                             </a>
                           </div>
@@ -253,7 +258,8 @@ const NavBar = () => {
                           </div>
                           <div class="col col-md-6 col-sm-6 col-12">
                             <a
-                              class="dropdown-item etf"
+                              className="dropdown-item etf"
+                              style={{ display: "flex" }}
                               href="https://twelvedata.com/etf">
                               <div class="submenu-item-image">
                                 <svg
@@ -279,9 +285,11 @@ const NavBar = () => {
                                     fill="white"></path>
                                 </svg>
                               </div>
-                              <span class="submenu-item">ETF</span>
-                              <span class="submenu-item-headline">
-                                Exchange-traded fund
+                              <span>
+                                <span class="submenu-item">ETF</span>
+                                <span class="submenu-item-headline">
+                                  Exchange-traded fund
+                                </span>
                               </span>
                             </a>
                           </div>
@@ -378,6 +386,7 @@ const NavBar = () => {
                           <div class="col col-xl-12 col-md-6 col-sm-6 col-12">
                             <a
                               class="dropdown-item google-sheets"
+                              style={{ display: "flex" }}
                               href="https://twelvedata.com/google-sheets">
                               <div class="submenu-item-image">
                                 <svg
@@ -396,9 +405,11 @@ const NavBar = () => {
                                     fill="#F1F1F1"></path>
                                 </svg>
                               </div>
-                              <span class="submenu-item">Google Sheets</span>
-                              <span class="submenu-item-headline">
-                                Real-time data and work
+                              <span>
+                                <span class="submenu-item">Google Sheets</span>
+                                <span class="submenu-item-headline">
+                                  Real-time data and work
+                                </span>
                               </span>
                             </a>
                           </div>
@@ -431,7 +442,10 @@ const NavBar = () => {
           </ul>
           <ul class="navbar-nav ml-auto buttons">
             <li class="nav-item">
-              <a class="nav-link action" href="https://twelvedata.com/login">
+              <a
+                class="nav-link action"
+                style={{ paddingLeft: "28px" }}
+                href="https://twelvedata.com/login">
                 Sign in{" "}
                 <svg
                   width="7"
