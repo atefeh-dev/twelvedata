@@ -101,8 +101,14 @@ a {
   padding: 1.875rem;
   border-radius: 16px;
 }
+
 @media (min-width: 992px) {
-}
-.nav-item .dropdown-menu .menu-inner {
-  padding: 1.875rem 3.75rem;
+  .nav-item .dropdown-menu .menu-inner {
+    padding: 1.875rem 3.75rem;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    top: 70px;
+    transform: translateX(-29%);
+  }
 }
