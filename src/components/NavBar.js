@@ -33,8 +33,8 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a class="navbar-brand logo" href="https://twelvedata.com">
-          <span class="twelve">twelve</span>data
+        <a className="navbar-brand logo" href="https://twelvedata.com">
+          <span className="twelve">twelve</span>data
         </a>
         <button
           className="navbar-toggler"
@@ -56,31 +56,28 @@ const NavBar = () => {
                 aria-current="page"
                 href="#"
                 ref={node}
-                onClick={toggling}
-                onClickOutside={() => {
-                  setIsOpen(false);
-                }}>
+                onClick={toggling}>
                 Products
               </a>
               {isOpen && (
                 <div
                   className="dropdown-menu products show"
                   aria-labelledby="navbarProducts">
-                  <div class="menu-inner soft">
-                    <div class="row">
-                      <div class="col col-12 col-xl-8">
-                        <span class="submenu-header">
+                  <div className="menu-inner soft">
+                    <div className="row">
+                      <div className="col col-12 col-xl-8">
+                        <span className="submenu-header">
                           <a href="https://twelvedata.com/market-data">
                             Market Data
                           </a>
                         </span>
-                        <div class="row">
-                          <div class="col col-md-6 col-sm-6 col-12">
+                        <div className="row">
+                          <div className="col col-md-6 col-sm-6 col-12">
                             <a
                               className="dropdown-item stocks"
                               style={{ display: "flex" }}
                               href="https://twelvedata.com/stocks">
-                              <div class="submenu-item-image">
+                              <div className="submenu-item-image">
                                 <svg
                                   width="68"
                                   height="68"
@@ -93,7 +90,7 @@ const NavBar = () => {
                                       height="68"
                                       rx="34"
                                       fill="#D9DEE8"
-                                      class="colored"></rect>
+                                      className="colored"></rect>
                                     <path
                                       d="M-2.5 39H7.91511C7.97108 39 8.02643 38.9883 8.07757 38.9655L12.3457 37.0686C12.4444 37.0247 12.5565 37.0226 12.6567 37.0627L17.3046 38.9219C17.4269 38.9708 17.5655 38.9563 17.6751 38.8833L26.2455 33.1697C26.3957 33.0695 26.5944 33.0824 26.7304 33.2012L33.7293 39.3113C33.9318 39.4881 34.2475 39.4188 34.3574 39.1736L40.6935 25.0387C40.8481 24.6939 41.3505 24.7359 41.4456 25.1016L47.1975 47.2158C47.281 47.5366 47.6961 47.6225 47.9 47.3612L54.3041 39.1539C54.3799 39.0568 54.4963 39 54.6195 39H60.5666C60.6323 39 60.697 38.9838 60.755 38.9528L66.7207 35.7673C66.8384 35.7044 66.9798 35.7044 67.0975 35.7673L73.0632 38.9528C73.1212 38.9838 73.1859 39 73.2516 39H95"
                                       stroke="white"
@@ -125,19 +122,19 @@ const NavBar = () => {
                                 </svg>
                               </div>
                               <span>
-                                <span class="submenu-item">Stock</span>
-                                <span class="submenu-item-headline">
+                                <span className="submenu-item">Stock</span>
+                                <span className="submenu-item-headline">
                                   US &amp; global coverage
                                 </span>
                               </span>
                             </a>
                           </div>
-                          <div class="col col-md-6 col-sm-6 col-12">
+                          <div className="col col-md-6 col-sm-6 col-12">
                             <a
-                              class="dropdown-item forex"
+                              className="dropdown-item forex"
                               style={{ display: "flex" }}
                               href="https://twelvedata.com/forex">
-                              <div class="submenu-item-image">
+                              <div className="submenu-item-image">
                                 <svg
                                   width="68"
                                   height="68"
@@ -149,7 +146,7 @@ const NavBar = () => {
                                     height="68"
                                     rx="34"
                                     fill="#D9DEE8"
-                                    class="colored"></rect>
+                                    className="colored"></rect>
                                   <circle
                                     cx="34"
                                     cy="35"
@@ -162,32 +159,32 @@ const NavBar = () => {
                                     r="9"
                                     fill="#D9DEE8"
                                     stroke="white"
-                                    stroke-width="2"
-                                    class="colored"></circle>
+                                    strokeWidth="2"
+                                    className="colored"></circle>
                                   <circle
                                     cx="19"
                                     cy="47"
                                     r="9"
                                     fill="#D9DEE8"
                                     stroke="white"
-                                    stroke-width="2"
-                                    class="colored"></circle>
+                                    strokeWidth="2"
+                                    className="colored"></circle>
                                   <circle
                                     cx="49"
                                     cy="20"
                                     r="9"
                                     fill="#D9DEE8"
                                     stroke="white"
-                                    stroke-width="2"
-                                    class="colored"></circle>
+                                    strokeWidth="2"
+                                    className="colored"></circle>
                                   <circle
                                     cx="49"
                                     cy="47"
                                     r="9"
                                     fill="#D9DEE8"
                                     stroke="white"
-                                    stroke-width="2"
-                                    class="colored"></circle>
+                                    strokeWidth="2"
+                                    className="colored"></circle>
                                   <path
                                     d="M50.3462 47.5788H51.9962V48.4918H49.9392V49.0968H51.9962V50.0098H49.9392V50.9998H48.1572V50.0098H46.1002V49.0968H48.1572V48.4918H46.1002V47.5788H47.7612L44.8462 43.2998H46.7492L49.1032 46.7428L51.4792 43.2998H53.2612L50.3462 47.5788Z"
                                     fill="white"></path>
@@ -203,18 +200,18 @@ const NavBar = () => {
                                 </svg>
                               </div>
                               <span>
-                                <span class="submenu-item">Forex</span>
-                                <span class="submenu-item-headline">
+                                <span className="submenu-item">Forex</span>
+                                <span className="submenu-item-headline">
                                   Physical currency
                                 </span>
                               </span>
                             </a>
                           </div>
-                          <div class="col col-md-6 col-sm-6 col-12">
+                          <div className="col col-md-6 col-sm-6 col-12">
                             <a
-                              class="dropdown-item crypto"
+                              className="dropdown-item crypto"
                               href="https://twelvedata.com/cryptocurrency">
-                              <div class="submenu-item-image">
+                              <div className="submenu-item-image">
                                 <svg
                                   width="68"
                                   height="68"
@@ -226,7 +223,7 @@ const NavBar = () => {
                                     height="68"
                                     rx="34"
                                     fill="#D9DEE8"
-                                    class="colored"></rect>
+                                    className="colored"></rect>
                                   <path
                                     d="M35.0581 8.5V27.3487L50.9892 34.4675L35.0581 8.5Z"
                                     fill="white"
@@ -251,18 +248,18 @@ const NavBar = () => {
                                     fill-opacity="0.602"></path>
                                 </svg>
                               </div>
-                              <span class="submenu-item">Crypto</span>
-                              <span class="submenu-item-headline">
+                              <span className="submenu-item">Crypto</span>
+                              <span className="submenu-item-headline">
                                 Digital currency
                               </span>
                             </a>
                           </div>
-                          <div class="col col-md-6 col-sm-6 col-12">
+                          <div className="col col-md-6 col-sm-6 col-12">
                             <a
                               className="dropdown-item etf"
                               style={{ display: "flex" }}
                               href="https://twelvedata.com/etf">
-                              <div class="submenu-item-image">
+                              <div className="submenu-item-image">
                                 <svg
                                   width="68"
                                   height="68"
@@ -274,7 +271,7 @@ const NavBar = () => {
                                     height="68"
                                     rx="34"
                                     fill="#D9DEE8"
-                                    class="colored"></rect>
+                                    className="colored"></rect>
                                   <path
                                     d="M34.0348 51.9961C38.3698 51.9964 42.5581 50.4261 45.8244 47.576L33.1255 34.8771C33.0055 34.7575 32.9103 34.6154 32.8454 34.4589C32.7804 34.3024 32.7469 34.1347 32.7469 33.9652V16C28.0883 16.3301 23.7398 18.4559 20.6179 21.9294C17.496 25.4028 15.8445 29.9526 16.0115 34.6199C16.1785 39.2872 18.151 43.7073 21.5131 46.9488C24.8753 50.1902 29.3646 51.9998 34.0348 51.9961Z"
                                     fill="white"></path>
@@ -287,18 +284,18 @@ const NavBar = () => {
                                 </svg>
                               </div>
                               <span>
-                                <span class="submenu-item">ETF</span>
-                                <span class="submenu-item-headline">
+                                <span className="submenu-item">ETF</span>
+                                <span className="submenu-item-headline">
                                   Exchange-traded fund
                                 </span>
                               </span>
                             </a>
                           </div>
-                          <div class="col col-md-6 col-sm-6 col-12">
+                          <div className="col col-md-6 col-sm-6 col-12">
                             <a
-                              class="dropdown-item indices"
+                              className="dropdown-item indices"
                               href="https://twelvedata.com/indices">
-                              <div class="submenu-item-image">
+                              <div className="submenu-item-image">
                                 <svg
                                   width="68"
                                   height="68"
@@ -314,19 +311,19 @@ const NavBar = () => {
                                     <path
                                       d="M35.1525 9.31743C35.1525 11.1163 35.0907 11.7163 34.6924 12.1925C33.9146 13.1203 32.7732 11.6188 30.4023 11.6188C27.7781 11.6188 25.6504 13.7457 25.6504 16.3699C25.6504 18.9941 27.7772 21.1218 30.4006 21.1218C32.7732 21.1218 33.9137 19.6212 34.6916 20.5482C35.0898 21.0244 35.1517 21.6243 35.1517 23.4232V32.7398V32.7406V32.7398L43.0812 32.7406C44.2437 32.7406 44.4073 32.6288 44.5047 32.4042C44.7038 31.9433 44.2963 31.1917 44.2963 29.4597C44.2963 25.811 48.1466 22.8987 51.525 22.8987C54.9 22.8987 58.7478 25.6636 58.7478 29.4597C58.7478 31.1908 58.3393 31.9424 58.5385 32.4042C58.6359 32.6271 58.8011 32.7406 59.9637 32.7406H67.8923V0H35.1525V9.31743Z"
                                       fill="#D9DEE8"
-                                      class="colored"></path>
+                                      className="colored"></path>
                                     <path
                                       d="M9.42387 32.7415C11.2219 32.7415 11.8219 32.8033 12.2989 33.2016C13.2268 33.9795 11.7253 35.1208 11.7253 37.4917C11.7253 40.1159 13.8521 42.2436 16.4763 42.2436C19.1006 42.2436 21.2274 40.1168 21.2274 37.4934C21.2274 35.1208 19.7268 33.9803 20.6538 33.2024C21.1308 32.8042 21.7307 32.7423 23.5288 32.7423H32.8445H32.8462H32.8445L32.8462 24.8129C32.8462 23.6503 32.7335 23.4868 32.509 23.3893C32.048 23.1902 31.2964 23.5978 29.5645 23.5978C25.9158 23.5978 23.0043 19.7474 23.0043 16.369C23.0043 12.9941 25.7683 9.14626 29.5645 9.14626C31.2956 9.14626 32.0472 9.55468 32.509 9.35556C32.7318 9.25811 32.8454 9.09288 32.8454 7.93032V0H0.106445V32.7415H9.42387Z"
                                       fill="#D9DEE8"
-                                      class="colored"></path>
+                                      className="colored"></path>
                                     <path
                                       d="M32.8479 58.682C32.8479 56.8848 32.9098 56.284 33.308 55.8069C34.0859 54.88 35.2264 56.3815 37.5982 56.3815C40.2215 56.3815 42.3492 54.2546 42.3492 51.6304C42.3492 49.0061 40.2224 46.8793 37.5998 46.8793C35.2264 46.8793 34.0859 48.38 33.308 47.4521C32.9098 46.9751 32.8479 46.376 32.8479 44.5771V35.2605V35.2588V35.2605L24.9185 35.2588C23.7559 35.2588 23.5924 35.3715 23.4949 35.596C23.2958 36.0578 23.7034 36.8094 23.7034 38.5406C23.7034 42.1901 19.853 45.1007 16.4746 45.1007C13.0997 45.1007 9.25186 42.3367 9.25186 38.5406C9.25186 36.8094 9.66028 36.0578 9.46115 35.596C9.36371 35.374 9.19848 35.2605 8.03592 35.2605H0.106445V67.9994H32.8479V58.682Z"
                                       fill="#D9DEE8"
-                                      class="colored"></path>
+                                      className="colored"></path>
                                     <path
                                       d="M58.5765 35.2581C56.7785 35.2581 56.1785 35.1971 55.7015 34.798C54.7736 34.021 56.2751 32.8796 56.2751 30.5088C56.2751 27.8845 54.1483 25.7568 51.5241 25.7568C48.8998 25.7568 46.773 27.8837 46.773 30.5071C46.773 32.8796 48.2736 34.0202 47.3466 34.798C46.8696 35.1971 46.2697 35.2581 44.4716 35.2581H35.155H35.1533H35.155L35.1533 43.1885C35.1533 44.3502 35.266 44.5137 35.4906 44.612C35.9515 44.8103 36.7031 44.4036 38.4351 44.4036C42.0838 44.4036 44.9953 48.253 44.9953 51.6323C44.9953 55.0072 42.2312 58.8551 38.4351 58.8551C36.704 58.8551 35.9524 58.4466 35.4906 58.6458C35.2677 58.7432 35.1542 58.9084 35.1542 60.071L35.155 68.0005H67.894V35.2581H58.5765Z"
                                       fill="#D9DEE8"
-                                      class="colored"></path>
+                                      className="colored"></path>
                                   </g>
                                   <defs>
                                     <clipPath id="clip251">
@@ -339,26 +336,26 @@ const NavBar = () => {
                                   </defs>
                                 </svg>
                               </div>
-                              <span class="submenu-item">Indices</span>
-                              <span class="submenu-item-headline">
+                              <span className="submenu-item">Indices</span>
+                              <span className="submenu-item-headline">
                                 Index fund
                               </span>
                             </a>
                           </div>
                         </div>
                       </div>
-                      <div class="col col-12 col-xl-4">
-                        <span class="submenu-header">
+                      <div className="col col-12 col-xl-4 mt-2">
+                        <span className="submenu-header">
                           <a href="https://twelvedata.com/spreadsheets">
                             Spreadsheets
                           </a>
                         </span>
-                        <div class="row">
-                          <div class="col col-xl-12 col-md-6 col-sm-6 col-12">
+                        <div className="row mt-3">
+                          <div className="col col-xl-12 col-md-6 col-sm-6 col-12">
                             <a
-                              class="dropdown-item excel"
+                              className="dropdown-item excel"
                               href="https://twelvedata.com/excel">
-                              <div class="submenu-item-image">
+                              <div className="submenu-item-image">
                                 <svg
                                   width="68"
                                   height="68"
@@ -370,7 +367,7 @@ const NavBar = () => {
                                     height="68"
                                     rx="34"
                                     fill="#D9DEE8"
-                                    class="colored"></rect>
+                                    className="colored"></rect>
                                   <path
                                     fill-rule="evenodd"
                                     clip-rule="evenodd"
@@ -378,18 +375,18 @@ const NavBar = () => {
                                     fill="white"></path>
                                 </svg>
                               </div>
-                              <span class="submenu-item">Excel</span>
-                              <span class="submenu-item-headline">
+                              <span className="submenu-item">Excel</span>
+                              <span className="submenu-item-headline">
                                 Automatic refreshes
                               </span>
                             </a>
                           </div>
-                          <div class="col col-xl-12 col-md-6 col-sm-6 col-12">
+                          <div className="col col-xl-12 col-md-6 col-sm-6 col-12">
                             <a
-                              class="dropdown-item google-sheets"
+                              className="dropdown-item google-sheets"
                               style={{ display: "flex" }}
                               href="https://twelvedata.com/google-sheets">
-                              <div class="submenu-item-image">
+                              <div className="submenu-item-image">
                                 <svg
                                   width="68"
                                   height="68"
@@ -407,8 +404,10 @@ const NavBar = () => {
                                 </svg>
                               </div>
                               <span>
-                                <span class="submenu-item">Google Sheets</span>
-                                <span class="submenu-item-headline">
+                                <span className="submenu-item">
+                                  Google Sheets
+                                </span>
+                                <span className="submenu-item-headline">
                                   Real-time data and work
                                 </span>
                               </span>
@@ -435,16 +434,16 @@ const NavBar = () => {
               <a
                 className="nav-link"
                 href="#"
-                tabindex="-1"
+                tabIndex="-1"
                 aria-disabled="true">
                 Pricing
               </a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto buttons">
-            <li class="nav-item">
+          <ul className="navbar-nav ml-auto buttons">
+            <li className="nav-item">
               <a
-                class="nav-link action"
+                className="nav-link action"
                 style={{ paddingLeft: "28px" }}
                 href="https://twelvedata.com/login">
                 Sign in{" "}
@@ -457,7 +456,7 @@ const NavBar = () => {
                   <path
                     d="M0.75 10L5.25 5.5L0.75 1"
                     stroke="#1D1D1F"
-                    stroke-width="2"></path>
+                    strokeWidth="2"></path>
                 </svg>
               </a>
             </li>

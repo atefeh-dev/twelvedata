@@ -48,6 +48,11 @@
 .dropdown-menu .dropdown-item.excel .colored {
   fill: #319f63;
 }
+.dropdown-menu .submenu-header a {
+  color: #1d1d1f;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
 .dropdown-menu .submenu-item {
   display: block;
   font-size: 1.25rem;
