@@ -1,0 +1,25 @@
+/** @format */
+
+.pricing-intro {
+  padding-bottom: 8.5rem;
+}
+.medium {
+  background-color: #f7f8fa;
+}
+.wrapper.intro .description {
+  padding-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper.intro h1 {
+  font-size: 2.875rem;
+  line-height: 4rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.wrapper.intro h2 {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}

@@ -77,7 +77,8 @@ const NavBar = () => {
                         <div class="row">
                           <div class="col col-md-6 col-sm-6 col-12">
                             <a
-                              class="dropdown-item stocks"
+                              className="dropdown-item stocks"
+                              style={{ display: "flex" }}
                               href="https://twelvedata.com/stocks">
                               <div class="submenu-item-image">
                                 <svg
