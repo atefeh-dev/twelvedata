@@ -71,7 +71,7 @@ const NavBar = () => {
                             Market Data
                           </a>
                         </span>
-                        <div className="row">
+                        <div className="row mt-4">
                           <div className="col col-md-6 col-sm-6 col-12">
                             <a
                               className="dropdown-item stocks"
@@ -344,13 +344,13 @@ const NavBar = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col col-12 col-xl-4 mt-2">
+                      <div className="col col-12 col-xl-4 ">
                         <span className="submenu-header">
                           <a href="https://twelvedata.com/spreadsheets">
                             Spreadsheets
                           </a>
                         </span>
-                        <div className="row mt-3">
+                        <div className="row mt-3 ">
                           <div className="col col-xl-12 col-md-6 col-sm-6 col-12">
                             <a
                               className="dropdown-item excel"

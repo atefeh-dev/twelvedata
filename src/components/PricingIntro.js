@@ -3,6 +3,7 @@
 import React from "react";
 import "../styles/pricingInfo.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PriceCard from "./PriceCard";
 
 const PricingIntro = () => {
   return (
@@ -42,6 +43,14 @@ const PricingIntro = () => {
                   Annual billing
                 </label>
               </div>
+            </div>
+            <div className="row pricing-cards">
+              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
+                <PriceCard />
+              </div>
+              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">1</div>
+              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">1</div>
+              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">1</div>
             </div>
           </div>
         </section>
