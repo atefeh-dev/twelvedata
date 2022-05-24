@@ -33,9 +33,7 @@ body {
   padding: 5px 0 4px;
   transition: margin-top 0.5s linear, border-radius 0.25s linear;
 }
-.pricing-card__item {
-  box-shadow: 0 10px 120px rgba(60, 78, 125, 0.14);
-}
+
 .pricing-card__item_custom {
   background: #1d1d1f !important;
   color: #fff;
