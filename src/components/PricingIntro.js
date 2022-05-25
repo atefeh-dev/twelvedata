@@ -12,14 +12,10 @@ import { setBillingPeriod } from "../actions/billingPeriod/action";
 const PricingIntro = () => {
   const [currentRadioValue, setCurrentRadioValue] = useState();
   const billingPeriodStore = useSelector((store) => store.billingPeriod);
+
   console.log(billingPeriodStore.billingPeriod);
   const dispatch = useDispatch();
 
-  const handleRadioChange = (e) => {
-    setCurrentRadioValue(e.target.value);
-    dispatch(setBillingPeriod(currentRadioValue));
-    console.log(e.target.value);
-  };
   return (
     <div className="wrapper intro medium pricing-intro">
       <div className="container pt-5">
@@ -44,7 +40,7 @@ const PricingIntro = () => {
                     name="billing_period"
                     value="monthly"
                     autoComplete="off"
-                    onChange={handleRadioChange}
+                    onChange={(e) => dispatch(setBillingPeriod(e.target.value))}
                     checked={currentRadioValue === "monthly"}
                   />
                   Monthly billing
@@ -55,7 +51,7 @@ const PricingIntro = () => {
                     name="billing_period"
                     value="yearly"
                     autoComplete="off"
-                    onChange={handleRadioChange}
+                    onChange={(e) => dispatch(setBillingPeriod(e.target.value))}
                     checked={currentRadioValue === "yearly"}
                   />
                   Annual billing
