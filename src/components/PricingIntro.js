@@ -4,6 +4,8 @@ import React from "react";
 import "../styles/pricingInfo.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PriceCard from "./PriceCard";
+import ApiPriceCard from "./ApiPriceCard";
+import ProApiPricingCard from "./ProApiPricingCard";
 
 const PricingIntro = () => {
   return (
@@ -48,9 +50,16 @@ const PricingIntro = () => {
               <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
                 <PriceCard />
               </div>
-              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">1</div>
-              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">1</div>
-              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">1</div>
+              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
+                <ApiPriceCard />
+              </div>
+              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
+                <ProApiPricingCard />
+              </div>
+              <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
+                {" "}
+                <ApiPriceCard />
+              </div>
             </div>
           </div>
         </section>
