@@ -51,3 +51,21 @@
   font-size: 1rem;
   width: 10.1875rem;
 }
+.btn-group-toggle .btn-outline-primary:hover,
+.btn-group .btn-outline-primary:hover {
+  background-color: transparent;
+  color: #2469f0;
+  border: 2px solid #d9dee8;
+}
+.btn-group-toggle .btn-outline-primary,
+.btn-group .btn-outline-primary {
+  color: #9da2ac;
+  border: 2px solid #d9dee8;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #2469f0;
+  border-color: #2469f0;
+}
