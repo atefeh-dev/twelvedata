@@ -8,13 +8,16 @@ import PriceCard from "./PriceCard";
 import ApiPriceCard from "./ApiPriceCard";
 import ProApiPricingCard from "./ProApiPricingCard";
 import { useDispatch, useSelector } from "react-redux";
-
+import { setBillingPeriod } from "../actions/billingPeriod/action";
 const PricingIntro = () => {
   const [currentRadioValue, setCurrentRadioValue] = useState();
   const billingPeriodStore = useSelector((store) => store.billingPeriod);
   console.log(billingPeriodStore.billingPeriod);
+  const dispatch = useDispatch();
+
   const handleRadioChange = (e) => {
     setCurrentRadioValue(e.target.value);
+    dispatch(setBillingPeriod(currentRadioValue));
     console.log(e.target.value);
   };
   return (
