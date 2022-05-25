@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import "../styles/pricecard.css";
 const proApiPricingCard = () => {
   return (
     <div

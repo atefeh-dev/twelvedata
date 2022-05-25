@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import { useState, useRef } from "react";
 import "../styles/pricingInfo.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PriceCard from "./PriceCard";
@@ -8,6 +9,12 @@ import ApiPriceCard from "./ApiPriceCard";
 import ProApiPricingCard from "./ProApiPricingCard";
 
 const PricingIntro = () => {
+  const [currentRadioValue, setCurrentRadioValue] = useState();
+
+  const handleRadioChange = (e) => {
+    setCurrentRadioValue(e.target.value);
+    console.log(e.target.value);
+  };
   return (
     <div className="wrapper intro medium pricing-intro">
       <div className="container pt-5">
@@ -32,6 +39,8 @@ const PricingIntro = () => {
                     name="billing_period"
                     value="monthly"
                     autoComplete="off"
+                    onChange={handleRadioChange}
+                    checked={currentRadioValue === "monthly"}
                   />
                   Monthly billing
                 </label>
@@ -41,6 +50,8 @@ const PricingIntro = () => {
                     name="billing_period"
                     value="yearly"
                     autoComplete="off"
+                    onChange={handleRadioChange}
+                    checked={currentRadioValue === "yearly"}
                   />
                   Annual billing
                 </label>
