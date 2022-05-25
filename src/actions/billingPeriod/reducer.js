@@ -6,14 +6,8 @@ const initialState = {
   billingPeriod: "monthly",
 };
 export const billingPeriodReducer = (state = initialState, action) => {
-  console.log(action.type);
-  console.log(billingPeriodActionType.setBillingPeriod);
-  console.log(action.period);
-
   switch (action.type) {
     case billingPeriodActionType.setBillingPeriod:
-      console.log("hi");
-
       return {
         ...state,
         billingPeriod: action.period,
