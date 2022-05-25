@@ -7,10 +7,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PriceCard from "./PriceCard";
 import ApiPriceCard from "./ApiPriceCard";
 import ProApiPricingCard from "./ProApiPricingCard";
+import { useDispatch, useSelector } from "react-redux";
 
 const PricingIntro = () => {
   const [currentRadioValue, setCurrentRadioValue] = useState();
-
+  const billingPeriodStore = useSelector((store) => store.billingPeriod);
+  console.log(billingPeriodStore.billingPeriod);
   const handleRadioChange = (e) => {
     setCurrentRadioValue(e.target.value);
     console.log(e.target.value);
@@ -57,7 +59,7 @@ const PricingIntro = () => {
                 </label>
               </div>
             </div>
-            <div className="row pricing-cards mt-4">
+            <div className="row pricing-cards mt-5">
               <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
                 <PriceCard />
               </div>
@@ -68,7 +70,6 @@ const PricingIntro = () => {
                 <ProApiPricingCard />
               </div>
               <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
-                {" "}
                 <ApiPriceCard />
               </div>
             </div>

@@ -1,7 +1,8 @@
 /** @format */
 
 import { combineReducers } from "redux";
+import { billingPeriodReducer } from "../actions/billingPeriod/reducer";
 
 export default combineReducers({
-  replaceMe: () => "hi there",
+  billingPeriod: billingPeriodReducer,
 });

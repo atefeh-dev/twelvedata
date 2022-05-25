@@ -369,7 +369,7 @@ const NavBar = () => {
                                     fill="#D9DEE8"
                                     className="colored"></rect>
                                   <path
-                                    fill-rule="evenodd"
+                                    fillRule="evenodd"
                                     clip-rule="evenodd"
                                     d="M42.335 41.887H37.283L33.837 37.013L30.216 41.887H25.142L31.437 33.97L26.354 27.046H31.479L33.86 30.811L36.397 27.046H41.612L36.283 33.97L42.335 41.887ZM49 48.652H19V20H49V48.652ZM21.882 45.77H46.113V22.884H21.882"
                                     fill="white"></path>
