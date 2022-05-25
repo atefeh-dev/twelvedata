@@ -57,7 +57,7 @@ const PricingIntro = () => {
                 </label>
               </div>
             </div>
-            <div className="row pricing-cards">
+            <div className="row pricing-cards mt-4">
               <div className="col col-lg-3 col-md-6 col-12 mb-4 mt-4">
                 <PriceCard />
               </div>
