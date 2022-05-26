@@ -1,7 +1,11 @@
 /** @format */
 
 import React from "react";
+import { useSelector } from "react-redux";
+
 const ApiPriceCard = () => {
+  const billingPeriodStore = useSelector((store) => store.billingPeriod);
+
   return (
     <div
       className="soft pricing-card__item  pricing-card__item_standart"
@@ -9,7 +13,11 @@ const ApiPriceCard = () => {
       data-category="enterprise">
       <div className="card__info" data-code="[card-info]">
         <div
-          className="card__label card__label_small card__label_green pricing-desc__free zero"
+          className={`card__label card__label_small card__label_green ${
+            billingPeriodStore.billingPeriod === "monthly"
+              ? "pricing-desc__free zero"
+              : ""
+          }`}
           data-code="common-profit">
           2 months for free
         </div>

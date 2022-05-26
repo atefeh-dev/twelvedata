@@ -2,7 +2,7 @@
 
 import React from "react";
 import "../styles/pricecard.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const ProApiPricingCard = () => {
   const billingPeriodStore = useSelector((store) => store.billingPeriod);
