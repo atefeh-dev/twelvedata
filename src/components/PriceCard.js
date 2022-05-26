@@ -2,14 +2,22 @@
 
 import React from "react";
 import "../styles/pricecard.css";
+import { useDispatch, useSelector } from "react-redux";
+
 const PriceCard = () => {
+  const billingPeriodStore = useSelector((store) => store.billingPeriod);
+
   return (
     <div
       className="soft pricing-card__item pricing-card__item_custom"
       data-code="pricing-card">
       <div className="card__info">
         <div
-          className="card__label card__label_small card__label_green pricing-desc__free zero"
+          className={`card__label card__label_small card__label_green  ${
+            billingPeriodStore.billingPeriod === "monthly"
+              ? "pricing-desc__free zero"
+              : ""
+          }`}
           data-code="common-profit">
           2 months for free
         </div>

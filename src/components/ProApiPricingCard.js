@@ -2,7 +2,11 @@
 
 import React from "react";
 import "../styles/pricecard.css";
-const proApiPricingCard = () => {
+import { useDispatch, useSelector } from "react-redux";
+
+const ProApiPricingCard = () => {
+  const billingPeriodStore = useSelector((store) => store.billingPeriod);
+
   return (
     <div
       className="soft pricing-card__item pricing-card__item_active pricing-card__item_standart"
@@ -11,7 +15,11 @@ const proApiPricingCard = () => {
       style={{ paddingTop: "40px" }}>
       <div className="card__info" data-code="[card-info]">
         <div
-          className="card__label card__label_small card__label_green pricing-desc__free zero"
+          className={`card__label card__label_small card__label_green ${
+            billingPeriodStore.billingPeriod === "monthly"
+              ? "pricing-desc__free zero"
+              : ""
+          }`}
           data-code="common-profit">
           2 months for free
         </div>
@@ -154,4 +162,4 @@ const proApiPricingCard = () => {
     </div>
   );
 };
-export default proApiPricingCard;
+export default ProApiPricingCard;
