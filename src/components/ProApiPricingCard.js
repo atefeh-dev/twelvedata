@@ -12,7 +12,10 @@ const ProApiPricingCard = () => {
       className="soft pricing-card__item pricing-card__item_active pricing-card__item_standart"
       data-code="pricing-card"
       data-category="pro"
-      style={{ paddingTop: "40px" }}>
+      style={{
+        paddingTop:
+          billingPeriodStore.billingPeriod == "monthly" ? "40px" : "70px",
+      }}>
       <div className="card__info" data-code="[card-info]">
         <div
           className={`card__label card__label_small card__label_green ${

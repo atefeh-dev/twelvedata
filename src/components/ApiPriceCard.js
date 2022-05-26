@@ -10,7 +10,11 @@ const ApiPriceCard = () => {
     <div
       className="soft pricing-card__item  pricing-card__item_standart"
       data-code="pricing-card"
-      data-category="enterprise">
+      data-category="enterprise"
+      style={{
+        paddingTop:
+          billingPeriodStore.billingPeriod == "monthly" ? "40px" : "70px",
+      }}>
       <div className="card__info" data-code="[card-info]">
         <div
           className={`card__label card__label_small card__label_green ${

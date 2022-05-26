@@ -10,6 +10,10 @@ const PriceCard = () => {
   return (
     <div
       className="soft pricing-card__item pricing-card__item_custom"
+      style={{
+        paddingTop:
+          billingPeriodStore.billingPeriod == "monthly" ? "40px" : "70px",
+      }}
       data-code="pricing-card">
       <div className="card__info">
         <div
