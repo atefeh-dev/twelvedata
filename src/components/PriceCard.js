@@ -33,10 +33,18 @@ const PriceCard = () => {
           <span className="card__price_currency">$</span>
           <span data-code="custom-amount">1,999</span>
         </div>
-        <div className="card__price_year zero" data-code="price-year">
+        <div
+          className={`card__price_year ${
+            billingPeriodStore.billingPeriod === "monthly" ? "zero" : ""
+          }`}
+          data-code="price-year">
           $<span data-code="amount-yearly">19,999</span> / year
         </div>
-        <div className="card__saving zero" data-code="rate-profit">
+        <div
+          className={`card__saving ${
+            billingPeriodStore.billingPeriod === "monthly" ? "zero" : ""
+          }`}
+          data-code="rate-profit">
           Save $<span data-code="rate-profit-value">3,998</span> / year
         </div>
         <a
