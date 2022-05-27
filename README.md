@@ -2,8 +2,9 @@
 [live demo](https://effulgent-halva-3ceb50.netlify.app/)
 ### overview ###
 :technologist:	 fully responsive Design using reactJS and Redux
-### How to use ###
-:performing_arts:	easily using this 2 commands
+### How to use? ###
+:performing_arts:	The following two commands can be used easily
+
 * yarn installl
 * yarn start
 ### final result ###
